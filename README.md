@@ -3,25 +3,29 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.1.
 
 ## Development server
+| Function                   | Description     |
+| :------------------------- | :---------------------------------------------------------- |
+| `ng serve`        | Navigate to `http://localhost:4200/` | 
+| `ng generate component component-name`        | Code scaffolding | 
+| `ng build`        | Build | 
+| `ng test`        | Running unit tests | 
+| `ng e2e`        | Running end-to-end tests | 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# Develop this project in WLA (White-Label App) approach
+It's just a simple example
+json
+In this project for branding, it is used three config files json namely: 
+- general.config.json => for changing general layout in app e.g. navbar layout, apptitle, logo
+- product-list.config.json =>  for changing layout and styles of Product list page
+- product-detail.config.json => for ordering any openents or elements and changing layout of Product details page
 
-## Code scaffolding
+## How to use this branding files
+- Defined the requirements in json files in brading folder
+- For calling them in an appropritae pattern of calling url utilizing paths property in tsconfig,js
+- Utilized resolveJsonModule for reading json files
+- Implemented InjectionToken to use the config in entire project as an independency .
+    - Developed general.config, product-list.config, product.detail.config
+    - For using them, you shoud invoke and inject them through provider and inject, thus they are implemented in app.config, app.routes based on the needs
+    - Moreover, Used them in components (e.g. navbar, product-list, product-details, product-vard) and services (for example: productservice) with inject DI
+    - Ulitimatly, used them in template with @if and @for (for more information read the product.details.template file that displays the relavant components based on ordering in json file)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
