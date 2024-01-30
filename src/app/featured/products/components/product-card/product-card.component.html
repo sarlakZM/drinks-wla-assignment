@@ -1,0 +1,14 @@
+<mat-card class="example-card">
+    <img mat-card-image  src="{{productData.strDrinkThumb}}" width="250" height="200"/>
+
+    <mat-card-content class="example-card-content">
+        <p>
+        {{ productData.strDrink}}
+        </p>
+    </mat-card-content>
+    <mat-card-actions>
+        
+        <a [routerLink]="['/product-details', productData.idDrink]"><button mat-button>More Info</button></a>
+
+      </mat-card-actions>
+</mat-card>

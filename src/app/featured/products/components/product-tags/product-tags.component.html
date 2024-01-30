@@ -1,0 +1,11 @@
+<p>Tags:
+
+ <mat-chip-set
+  class="example-chip"
+  >
+  @for (tag of tags; track $index) {
+    <mat-chip class="example-box" cdkDrag>{{tag}}</mat-chip>
+  }
+</mat-chip-set>
+   
+</p>

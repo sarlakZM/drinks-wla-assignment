@@ -1,0 +1,12 @@
+
+<div [style]="productListConfig.cardsLayout">
+    @if (products$ | async; as products) {
+        @for (product of products.drinks; track product.idDrink) {
+            <app-product-card [productData]="product"></app-product-card> 
+        } @empty {
+            <mat-progress-spinner>
+        </mat-progress-spinner>
+            <div [style]="productListConfig.loadingTextSpinner">loading ...</div>
+        }
+    }
+</div>
