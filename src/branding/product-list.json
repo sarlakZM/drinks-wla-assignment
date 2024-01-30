@@ -1,0 +1,15 @@
+{
+    "cardsLayout":{
+        "display": "flex",
+        "flex-wrap": "wrap",
+        "box-sizing": "border-box",
+        "justify-content": "space-around",
+        "margin": "15px 2px"  
+    },
+    "loadingTextSpinner": {
+        "position": "relative",
+        "top": "-60px",
+        "left": "30px",
+        "font-weight": "200"
+    }
+}

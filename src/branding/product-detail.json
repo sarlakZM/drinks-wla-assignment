@@ -1,0 +1,15 @@
+{
+   "components": [ 
+    "image",
+    "description",
+    "ingredients",
+    "instructions",
+    "tags"
+    ],
+    "layouts":{
+        "display": "flex",
+        "flex-wrap": "wrap",
+        "margin": "10px",
+        "justify-content": "space-between"
+    }
+}

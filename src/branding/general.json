@@ -1,0 +1,10 @@
+{
+    "appTitle": "Eliq Drinks app assignment",
+    "logo": "https://www.thecocktaildb.com/images/logo.png",
+    "logoStyle": {
+        "width": "20%",
+        "margin": "0px 10px"
+    },
+    "navbarColor": "accent",
+    "button": "accent" 
+}
