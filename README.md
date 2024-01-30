@@ -17,7 +17,7 @@ API Specification:
 | `ng e2e`  | Running end-to-end tests |
 
 
-# Develop this project in WLA (White-Label App) approach
+## Develop this project in WLA (White-Label App) approach
 It's just a simple example
 json
 In this project for branding, it is used three config files json namely: 
