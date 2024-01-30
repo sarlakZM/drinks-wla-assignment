@@ -2,14 +2,20 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.1.
 
+API Specification:
+- api url =>  https://www.thecocktaildb.com/api.php
+- Filter => https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic
+- Get by Id => https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i={The id of drink}
+
 ## Development server
 | Function                   | Description     |
 | :------------------------- | :---------------------------------------------------------- |
 | `ng serve`        | Navigate to `http://localhost:4200/` | 
 | `ng generate component component-name`        | Code scaffolding | 
-| `ng build`        | Build | 
-| `ng test`        | Running unit tests | 
-| `ng e2e`        | Running end-to-end tests | 
+| `ng build`| Build | 
+| `ng test` | Running unit tests | 
+| `ng e2e`  | Running end-to-end tests |
+
 
 # Develop this project in WLA (White-Label App) approach
 It's just a simple example
