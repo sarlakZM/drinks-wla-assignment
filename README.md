@@ -23,7 +23,7 @@ json
 In this project for branding, it is used three config files json namely: 
 - general.config.json => for changing general layout in app e.g. navbar layout, apptitle, logo
 - product-list.config.json =>  for changing layout and styles of Product list page
-- product-detail.config.json => for ordering any openents or elements and changing layout of Product details page
+- product-detail.config.json => for ordering any compenents or elements and changing layout of Product details page
 
 ## How to use this branding files
 - Defined the requirements in json files in brading folder
@@ -33,5 +33,5 @@ In this project for branding, it is used three config files json namely:
     - Developed general.config, product-list.config, product.detail.config
     - For using them, you shoud invoke and inject them through provider and inject, thus they are implemented in app.config, app.routes based on the needs
     - Moreover, Used them in components (e.g. navbar, product-list, product-details, product-vard) and services (for example: productservice) with inject DI
-    - Ulitimatly, used them in template with @if and @for (for more information read the product.details.template file that displays the relavant components based on ordering in json file)
+    - Ulitimatly, used them in template with @if and @for (for more information read the product.details.template file that displays the relevant components based on ordering in json file)
 
