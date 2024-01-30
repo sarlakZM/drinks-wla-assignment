@@ -21,7 +21,7 @@ In this project for branding, it is used three config files json namely:
 
 ## How to use this branding files
 - Defined the requirements in json files in brading folder
-- For calling them in an appropritae pattern of calling url utilizing paths property in tsconfig,js
+- For calling them in an appropritae pattern of calling path utilizing paths property in tsconfig.ts
 - Utilized resolveJsonModule for reading json files
 - Implemented InjectionToken to use the config in entire project as an independency .
     - Developed general.config, product-list.config, product.detail.config

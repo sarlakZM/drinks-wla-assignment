@@ -4,6 +4,7 @@ import { DebugElement } from '@angular/core';
 
 import { ProductCardComponent } from './product-card.component';
 import { Product } from '../../models/product.model';
+import { GENERAL_CONFIG_DATA, GeneralConfig } from 'src/app/core/config/general.config';
 
 describe('ProductCardComponent', () => {
   let component: ProductCardComponent;
@@ -13,7 +14,13 @@ describe('ProductCardComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [ProductCardComponent],
-      providers:[provideRouter([])]
+      providers:[
+        provideRouter([]),
+        {
+          provide: GENERAL_CONFIG_DATA,
+          useValue: GeneralConfig
+        }
+      ]
     })
     .compileComponents();
     

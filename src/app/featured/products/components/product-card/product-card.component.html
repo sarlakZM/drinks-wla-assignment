@@ -7,8 +7,10 @@
         </p>
     </mat-card-content>
     <mat-card-actions>
-        
-        <a [routerLink]="['/product-details', productData.idDrink]"><button mat-button>More Info</button></a>
-
+        <a [routerLink]="['/product-details', productData.idDrink]">
+            <button mat-button color="{{generalConfig.button}}">
+                More Info
+            </button>
+        </a>
       </mat-card-actions>
 </mat-card>
