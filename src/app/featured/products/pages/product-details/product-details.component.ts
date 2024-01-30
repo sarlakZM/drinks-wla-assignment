@@ -1,11 +1,11 @@
-import { ChangeDetectionStrategy, Component, OnInit, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ProductService } from '../../services/product.service';
 import { MatCardModule } from '@angular/material/card';
 import { Observable } from 'rxjs';
-import { ProductList } from '../../models/product.model';
 import { AsyncPipe } from '@angular/common';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { ProductService } from '../../services/product.service';
+import { ProductList } from '../../models/product.model';
 import { ProductTagsComponent } from '../../components/product-tags/product-tags.component';
 import { ProductDescriptionComponent } from '../../components/product-description/product-description.component';
 import { ProductImageComponent } from '../../components/product-image/product-image.component';

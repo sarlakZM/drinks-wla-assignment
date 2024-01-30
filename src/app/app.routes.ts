@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 import { API_URL, ApiURL, PRODUCT_DETIAL_CONFIG_DATA, PRODUCT_LIST_CONFIG_DATA, ProductDetailConfig, ProductListConfig } from './featured/products/config/product.config';
-import { ProductService } from './featured/products/services/product.service';
 
 export const routes: Routes = [
     {

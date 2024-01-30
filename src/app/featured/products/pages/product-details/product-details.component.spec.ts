@@ -1,10 +1,11 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { provideHttpClientTesting } from '@angular/common/http/testing';
 import { provideHttpClient } from '@angular/common/http';
+import { provideRouter } from '@angular/router';
+
 import { ProductDetailsComponent } from './product-details.component';
 import { ProductService } from '../../services/product.service';
 import { API_URL, ApiURL, PRODUCT_DETIAL_CONFIG_DATA, ProductDetailConfig } from '../../config/product.config';
-import { provideRouter } from '@angular/router';
 
 
 

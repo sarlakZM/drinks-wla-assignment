@@ -2,9 +2,9 @@ import { NgOptimizedImage } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
-import { Product } from '../../models/product.model';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterLink } from '@angular/router';
+import { Product } from '../../models/product.model';
 
 @Component({
   selector: 'app-product-card',

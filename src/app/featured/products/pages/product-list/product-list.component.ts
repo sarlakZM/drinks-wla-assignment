@@ -1,10 +1,11 @@
 import { Component, inject } from '@angular/core';
-import { ProductService } from '../../services/product.service';
 import { AsyncPipe } from '@angular/common';
-import { ProductCardComponent } from '../../components/product-card/product-card.component';
-import { Observable } from 'rxjs';
-import { ProductList } from '../../models/product.model';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { Observable } from 'rxjs';
+
+import { ProductService } from '../../services/product.service';
+import { ProductCardComponent } from '../../components/product-card/product-card.component';
+import { ProductList } from '../../models/product.model';
 import { PRODUCT_LIST_CONFIG_DATA } from '../../config/product.config';
 
 @Component({

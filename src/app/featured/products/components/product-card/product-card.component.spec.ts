@@ -1,9 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideRouter } from '@angular/router';
+import { DebugElement } from '@angular/core';
 
 import { ProductCardComponent } from './product-card.component';
-import { provideRouter } from '@angular/router';
 import { Product } from '../../models/product.model';
-import { DebugElement } from '@angular/core';
 
 describe('ProductCardComponent', () => {
   let component: ProductCardComponent;
