@@ -34,12 +34,12 @@ describe('ProductService', () => {
     expect(service).toBeTruthy();
   });
 
-  it('Create team', async () => {
+  it('Get drinks prosucts by filter', async () => {
     const spyCreate: jasmine.Spy = spyOn(
       service,
       'getByFiltered'
     ).and.returnValue(of(mockProductResult));
-    service.getByFiltered().subscribe(result => {
+    service.getByFiltered('Alcoholic').subscribe(result => {
       expect(result).toBe(mockProductResult);
     });
 

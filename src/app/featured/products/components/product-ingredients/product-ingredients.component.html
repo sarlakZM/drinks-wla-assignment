@@ -1,10 +1,10 @@
-<section>
   <h3>Ingredients</h3>
-  <mat-list role="list">
-    @for (ingredient of ingredients; track $index) {
-      <mat-list-item role="listitem">
-        <span matListItemTitle> {{ ingredient }}</span>
-      </mat-list-item>
-    }
-  </mat-list>
- </section>
+  <mat-chip-set aria-label="Tags" color="primary"
+  class="example-chip"
+  >
+  @for (ingredient of productsStore.selectedProductDetailsIngredients(); track $index) {
+    <mat-chip class="example-box">{{ingredient}}</mat-chip>
+  }@empty {
+    N/A
+  }
+</mat-chip-set>

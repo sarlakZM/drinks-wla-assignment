@@ -1,5 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
 import { MatChipsModule } from '@angular/material/chips';
+
+import { ProductsStore } from '../../store/product.store';
 
 @Component({
   selector: 'app-product-tags',
@@ -9,5 +11,5 @@ import { MatChipsModule } from '@angular/material/chips';
   styleUrl: './product-tags.component.scss'
 })
 export class ProductTagsComponent {
-  @Input() tags!: string[];
+  readonly productsStore = inject(ProductsStore);
 }

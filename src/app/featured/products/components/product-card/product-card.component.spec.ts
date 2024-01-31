@@ -38,7 +38,7 @@ describe('ProductCardComponent', () => {
     expect(component).toBeTruthy();
     const productDe: DebugElement = fixture.debugElement;
     const productEl: HTMLElement = productDe.nativeElement;
-    const p = productEl.querySelector('p')!;
+    const p = productEl.querySelector('h4')!;
     expect(p.textContent?.trim()).toEqual('Almond Chocolate Coffee');
   });
 

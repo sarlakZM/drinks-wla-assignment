@@ -4,6 +4,7 @@ import { provideHttpClient } from '@angular/common/http';
 import { ProductListComponent } from './product-list.component';
 import { ProductService } from '../../services/product.service';
 import { API_URL, ApiURL, PRODUCT_LIST_CONFIG_DATA, ProductListConfig } from '../../config/product.config';
+import { ProductsStore } from '../../store/product.store';
 
 
 
@@ -20,6 +21,7 @@ describe('ProductListComponent', () => {
       providers: [ProductService,
         provideHttpClientTesting(),
         provideHttpClient(),
+        ProductsStore,
         {
           provide: PRODUCT_LIST_CONFIG_DATA,
           useValue: ProductListConfig,

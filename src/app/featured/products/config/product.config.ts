@@ -21,5 +21,4 @@ export const ProductListConfig: any = { ...ProductListConfigData }
 export const ProductDetailConfig: any = { ...ProductDetailConfigData }
 export const ApiURL: any = {
     apiUrl: "https://www.thecocktaildb.com/api/json/v1/1/",
-    filterdData: "Alcoholic"
 }

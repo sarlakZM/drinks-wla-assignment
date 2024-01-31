@@ -1,5 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
 import {MatListModule} from '@angular/material/list';
+
+import { ProductsStore } from '../../store/product.store';
 
 @Component({
   selector: 'app-product-instructions',
@@ -9,5 +11,5 @@ import {MatListModule} from '@angular/material/list';
   styleUrl: './product-instructions.component.scss'
 })
 export class ProductInstructionsComponent {
-  @Input() instructions!: string[];
+  readonly productsStore = inject(ProductsStore);
 }

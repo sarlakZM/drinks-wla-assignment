@@ -1,52 +1,25 @@
-@if (productDetails$ | async; as productDetails) {
-    @for (productDetail of productDetails.drinks; track productDetail.idDrink) {
-        <div [style]="productDetailConfig.layouts">
+<div [style]="productDetailConfig.layouts">
+    @for (config of productDetailConfig.components; track $index) {
+            @switch (config) {
+                @case ('image') {
+                        <app-product-image></app-product-image>
+                }
+                @case ('description') {
+                        <app-product-description></app-product-description>
+                }
+                @case ('ingredients') {
+                        <mat-divider role="separator"></mat-divider>
+                        <app-product-ingredients></app-product-ingredients>
+                }
+                @case ('instructions') {
+                        <mat-divider role="separator"></mat-divider>
+                        <app-product-instructions></app-product-instructions>
+                }
+                @case ('tags') {
+                        <app-product-tags></app-product-tags>
+                }
+                @default { <p>Unknown Fruit.</p> }
 
-            @for (config of productDetailConfig.components; track $index) {
-                    @switch (config) {
-                        @case ('image') {
-                            @if(productDetail.strDrinkThumb){
-                                <app-product-image [image]="productDetail.strDrinkThumb"></app-product-image>
-                            }
-                        }
-                        @case ('description') {
-                            @if(productDetail.strDrink){
-                                <app-product-description [description]="productDetails.drinks[0].strDrink"></app-product-description>
-                            }
-                        }
-                        @case ('ingredients') {
-                            @if(productDetail.strIngredient1){
-                                <app-product-ingredients [ingredients]="[
-                                productDetail.strIngredient1,
-                                ]"></app-product-ingredients>
-                            }
-                        
-                        }
-                        @case ('instructions') {
-                            @if(productDetail.strInstructions){
-                                <app-product-instructions [instructions]="[
-                                productDetail.strInstructions,
-                            
-                                ]"></app-product-instructions>
-                            }
-                        }
-                        @case ('tags') {
-                            @if(productDetail.strTags){
-                                <app-product-tags [tags]="[
-                                productDetail.strTags
-                                ]"></app-product-tags>
-                            }
-                        }
-                        @default { <p>Unknown Fruit.</p> }
-
-                    }
             }
-        </div>
     }
-
- } @else {
-    <mat-progress-spinner>
-    </mat-progress-spinner>
-        <div class="loading-text-spinner">loading ...</div>
-
-}
+</div>

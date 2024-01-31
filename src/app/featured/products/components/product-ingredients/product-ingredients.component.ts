@@ -1,13 +1,16 @@
-import { Component, Input } from '@angular/core';
-import { MatListModule } from '@angular/material/list';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { MatChipsModule } from '@angular/material/chips';
+
+import { ProductsStore } from '../../store/product.store';
 
 @Component({
   selector: 'app-product-ingredients',
   standalone: true,
-  imports: [MatListModule],
+  imports: [MatChipsModule],
   templateUrl: './product-ingredients.component.html',
-  styleUrl: './product-ingredients.component.scss'
+  styleUrl: './product-ingredients.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProductIngredientsComponent {
-  @Input() ingredients!: string[];
+  readonly productsStore = inject(ProductsStore);
 }

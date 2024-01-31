@@ -2,9 +2,9 @@
    "components": [ 
     "image",
     "description",
+    "tags",
     "ingredients",
-    "instructions",
-    "tags"
+    "instructions"
     ],
     "layouts":{
         "display": "flex",

@@ -1,10 +1,28 @@
-<section>
   <h3>Instructions</h3>
   <mat-list role="list">
-    @for (instruction of instructions; track $index) {
-      <mat-list-item role="listitem">
-        <span matListItemTitle> {{instruction }}</span>
-      </mat-list-item>
-    }
-  </mat-list>
- </section>
+    <mat-list-item role="listitem">
+      <span matListItemTitle> English</span>
+      <span matListItemLine> {{productsStore.selectedProductDetailsInstructions().strInstructions ?? 'N/A'}}</span>
+    </mat-list-item>
+    <mat-list-item role="listitem">
+      <span matListItemTitle> Spain </span>
+      <span matListItemLine> {{productsStore.selectedProductDetailsInstructions().strInstructionsES ?? 'N/A'}}</span>
+    </mat-list-item>
+    <mat-list-item role="listitem">
+      <span matListItemTitle> Germany </span>
+      <span matListItemLine> {{productsStore.selectedProductDetailsInstructions().strInstructionsDE ?? 'N/A'}}</span>
+    </mat-list-item>
+    <mat-list-item role="listitem">
+      <span matListItemTitle> France </span>
+      <span matListItemLine> {{productsStore.selectedProductDetailsInstructions().strInstructionsFR ?? 'N/A'}}</span>
+    </mat-list-item>
+    <mat-list-item role="listitem">
+      <span matListItemTitle> Chinese (Simplified) </span>
+      <span matListItemLine> {{productsStore.selectedProductDetailsInstructions()['strInstructionsZH-HANS'] ?? 'N/A'}}</span>
+    </mat-list-item>
+    <mat-list-item role="listitem">
+      <span matListItemTitle> Chinese (Traditional) </span>
+      <span matListItemLine> {{productsStore.selectedProductDetailsInstructions()['strInstructionsZH-HANT'] ?? 'N/A'}}</span>
+    </mat-list-item>
+      
+</mat-list>

@@ -1,10 +1,14 @@
 import { Routes } from '@angular/router';
 import { API_URL, ApiURL, PRODUCT_DETIAL_CONFIG_DATA, PRODUCT_LIST_CONFIG_DATA, ProductDetailConfig, ProductListConfig } from './featured/products/config/product.config';
+import { ProductsStore } from './featured/products/store/product.store';
+import { ProductService } from './featured/products/services/product.service';
 
 export const routes: Routes = [
     {
         path: '',
         providers: [
+          ProductsStore,
+          ProductService,
           {
             provide: PRODUCT_LIST_CONFIG_DATA,
             useValue: ProductListConfig,
@@ -22,6 +26,8 @@ export const routes: Routes = [
     {
         path: 'product-details/:id',
         providers: [
+          ProductsStore,
+          ProductService,
           {
             provide: PRODUCT_DETIAL_CONFIG_DATA,
             useValue: ProductDetailConfig,

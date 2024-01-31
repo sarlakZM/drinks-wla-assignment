@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ProductsStore } from '../../store/product.store';
 
 @Component({
   selector: 'app-product-description',
@@ -8,5 +9,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './product-description.component.scss'
 })
 export class ProductDescriptionComponent {
-  @Input() description!: string;
+  readonly productsStore = inject(ProductsStore);
 }

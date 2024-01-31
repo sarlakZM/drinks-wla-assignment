@@ -14,11 +14,11 @@ export class ProductService extends BaseService<ProductList> {
     super(httpClient, api_url.apiUrl);
   }
 
-  getByFiltered(): Observable<ProductList> {
+  getByFiltered(query: string): Observable<ProductList> {
     this.path = `filter.php`;
     const params = new HttpParams({
       fromObject: {
-        a: this.api_url.filterdData,
+        a: query,
       },
     });
     return this.get(params);

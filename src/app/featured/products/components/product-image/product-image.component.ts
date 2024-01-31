@@ -1,5 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
+
+import { ProductsStore } from '../../store/product.store';
 
 @Component({
   selector: 'app-product-image',
@@ -9,6 +11,5 @@ import { MatCardModule } from '@angular/material/card';
   styleUrl: './product-image.component.scss'
 })
 export class ProductImageComponent {
-  @Input() image!: string;
-
+  readonly productsStore = inject(ProductsStore);
 }
