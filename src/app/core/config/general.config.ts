@@ -7,4 +7,4 @@ export const GENERAL_CONFIG_DATA = new InjectionToken<GeneralConfigModel>(
   'general.config'
 );
 
-export const GeneralConfig: GeneralConfigModel = { ...GeneralConfigData }
+export const GeneralConfig: GeneralConfigModel = { ...GeneralConfigData };

@@ -1,5 +1,5 @@
-import { Component, Input, inject } from '@angular/core';
-import {MatListModule} from '@angular/material/list';
+import { Component, inject } from '@angular/core';
+import { MatListModule } from '@angular/material/list';
 
 import { ProductsStore } from '../../store/product.store';
 
@@ -8,7 +8,7 @@ import { ProductsStore } from '../../store/product.store';
   standalone: true,
   imports: [MatListModule],
   templateUrl: './product-instructions.component.html',
-  styleUrl: './product-instructions.component.scss'
+  styleUrl: './product-instructions.component.scss',
 })
 export class ProductInstructionsComponent {
   readonly productsStore = inject(ProductsStore);

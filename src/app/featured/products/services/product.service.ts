@@ -3,10 +3,10 @@ import { Inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { BaseService } from 'src/app/core/services/base.service';
 import { API_URL } from '../config/product.config';
-import { ProductList } from '../models/product.model';
+import { ProductListModel } from '../models/product.model';
 
 @Injectable()
-export class ProductService extends BaseService<ProductList> {
+export class ProductService extends BaseService<ProductListModel> {
   constructor(
     httpClient: HttpClient,
     @Inject(API_URL) private api_url: any
@@ -14,7 +14,7 @@ export class ProductService extends BaseService<ProductList> {
     super(httpClient, api_url.apiUrl);
   }
 
-  getByFiltered(query: string): Observable<ProductList> {
+  getByFiltered(query: string): Observable<ProductListModel> {
     this.path = `filter.php`;
     const params = new HttpParams({
       fromObject: {
@@ -24,7 +24,7 @@ export class ProductService extends BaseService<ProductList> {
     return this.get(params);
   }
 
-  getDeatilsByID(id: string): Observable<ProductList> {
+  getDeatilsByID(id: string): Observable<ProductListModel> {
     this.path = `lookup.php`;
     const params = new HttpParams({
       fromObject: {

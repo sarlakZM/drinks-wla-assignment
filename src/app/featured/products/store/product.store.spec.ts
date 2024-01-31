@@ -11,7 +11,10 @@ describe('ProductsStore', () => {
     });
   });
 
-  it('should be created', inject([ProductsStore], (service: typeof ProductsStore) => {
-    expect(service).toBeTruthy();
-  }));
+  it('should be created', inject(
+    [ProductsStore],
+    (service: typeof ProductsStore) => {
+      expect(service).toBeTruthy();
+    }
+  ));
 });

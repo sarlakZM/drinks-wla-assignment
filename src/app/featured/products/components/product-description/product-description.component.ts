@@ -6,7 +6,7 @@ import { ProductsStore } from '../../store/product.store';
   standalone: true,
   imports: [],
   templateUrl: './product-description.component.html',
-  styleUrl: './product-description.component.scss'
+  styleUrl: './product-description.component.scss',
 })
 export class ProductDescriptionComponent {
   readonly productsStore = inject(ProductsStore);

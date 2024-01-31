@@ -5,10 +5,13 @@ import { provideRouter } from '@angular/router';
 
 import { ProductDetailsComponent } from './product-details.component';
 import { ProductService } from '../../services/product.service';
-import { API_URL, ApiURL, PRODUCT_DETIAL_CONFIG_DATA, ProductDetailConfig } from '../../config/product.config';
+import {
+  API_URL,
+  ApiURL,
+  PRODUCT_DETIAL_CONFIG_DATA,
+  ProductDetailConfig,
+} from '../../config/product.config';
 import { ProductsStore } from '../../store/product.store';
-
-
 
 describe('ProductDetailsComponent', () => {
   let component: ProductDetailsComponent;
@@ -17,7 +20,8 @@ describe('ProductDetailsComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [ProductDetailsComponent],
-      providers: [ProductService,
+      providers: [
+        ProductService,
         ProductsStore,
         provideHttpClientTesting(),
         provideHttpClient(),
@@ -29,10 +33,10 @@ describe('ProductDetailsComponent', () => {
         {
           provide: API_URL,
           useValue: ApiURL,
-        }],
-    })
-    .compileComponents();
-    
+        },
+      ],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(ProductDetailsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

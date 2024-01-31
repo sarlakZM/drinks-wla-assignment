@@ -15,18 +15,19 @@ describe('ProductTagsComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [ProductTagsComponent],
-      providers:[ ProductsStore, ProductService,
+      providers: [
+        ProductsStore,
+        ProductService,
         provideHttpClientTesting(),
         provideHttpClient(),
         provideRouter([]),
         {
           provide: API_URL,
           useValue: ApiURL,
-        }
-        ]
-    })
-    .compileComponents();
-    
+        },
+      ],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(ProductTagsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

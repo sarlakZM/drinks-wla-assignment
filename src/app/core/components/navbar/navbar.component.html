@@ -1,6 +1,5 @@
-<mat-toolbar class="navbar" color="{{generalConfig.navbarColor}}">
-    <img [style]="generalConfig.logoStyle" src="{{generalConfig.logo}}">
-    <span>{{generalConfig.appTitle}}</span>
-    <span class="example-spacer"></span>
-
+<mat-toolbar class="navbar" color="{{generalConfig.navbarColor}}" role="toolbar">
+    <img [style]="generalConfig.logoStyle" src="{{generalConfig.logo}}" alt="logo" role="img" />
+    <span role="text">{{generalConfig.appTitle}}</span>
+    <span role="text" class="example-spacer"></span>
 </mat-toolbar>

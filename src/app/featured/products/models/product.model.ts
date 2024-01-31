@@ -1,20 +1,17 @@
-
-export interface Product {
+export interface ProductModel {
   idDrink: string;
   strDrink: string;
   strDrinkThumb: string;
 }
 
-export interface ProductList {
-  drinks: ProductDetials[];
+export interface ProductListModel {
+  drinks: ProductDetialsModel[];
 }
 
-
-export type ProductDetials = Product & {
-
+export type ProductDetialsModel = ProductModel & {
   strDrinkAlternate?: string;
-  strTags?: string; 
-  strVideo?:string;
+  strTags?: string;
+  strVideo?: string;
   strCategory?: string;
   strIBA?: string;
   strAlcoholic?: string;
@@ -27,8 +24,8 @@ export type ProductDetials = Product & {
   strInstructionsES?: string;
   strInstructionsDE?: string;
   strInstructionsFR?: string;
-  "strInstructionsZH-HANS"?: string;
-  "strInstructionsZH-HANT"?: string;
+  'strInstructionsZH-HANS'?: string;
+  'strInstructionsZH-HANT'?: string;
   strIngredient1?: string;
   strIngredient2?: string;
   strIngredient3?: string;
@@ -59,4 +56,31 @@ export type ProductDetials = Product & {
   strMeasure13?: string;
   strMeasure14?: string;
   strMeasure15?: string;
+};
+
+export interface ProductListConfigModel {
+  components: string[];
+  layouts: {
+    display: string;
+    'flex-wrap': string;
+    margin: string;
+    'justify-content': string;
+    'flex-direction': string;
+  };
+}
+
+export interface ProductDetailConfigModel {
+  cardsLayout: {
+    display: string;
+    'flex-wrap': string;
+    'box-sizing': string;
+    'justify-content': string;
+    margin: string;
+  };
+  loadingTextSpinner: {
+    position: string;
+    top: string;
+    left: string;
+    'font-weight': string;
+  };
 }

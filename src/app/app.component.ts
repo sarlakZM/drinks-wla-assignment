@@ -7,11 +7,11 @@ import { NavbarComponent } from './core/components/navbar/navbar.component';
   standalone: true,
   imports: [RouterOutlet, NavbarComponent],
   template: `
-  <app-navbar></app-navbar>
-  <section class="container">
-    <router-outlet></router-outlet>
-  </section>
-  `
+    <app-navbar></app-navbar>
+    <section class="container">
+      <router-outlet></router-outlet>
+    </section>
+  `,
 })
 export class AppComponent {
   title = 'eliq-wla-assignment';

@@ -15,18 +15,19 @@ describe('ProductImageComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [ProductImageComponent],
-      providers:[ ProductsStore, ProductService,
+      providers: [
+        ProductsStore,
+        ProductService,
         provideHttpClientTesting(),
         provideHttpClient(),
         provideRouter([]),
         {
           provide: API_URL,
           useValue: ApiURL,
-        }
-      ]
-    })
-    .compileComponents();
-    
+        },
+      ],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(ProductImageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
