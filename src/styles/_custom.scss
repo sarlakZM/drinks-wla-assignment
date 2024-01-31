@@ -1,0 +1,19 @@
+.router-link-active-color , .aria-Current-when-active-color{
+  --mdc-outlined-button-label-text-color: #ff4081,
+  --mdc-outlined-button-outline-color: rgba(0, 0, 0, .12),
+  --mat-outlined-button-state-layer-color: #ff4081,
+  --mat-outlined-button-ripple-color: rgba(255, 64, 129, .1)
+}
+
+.example-card {
+      margin: 10px;
+      max-width: 250px;     
+}
+.example-card-content{
+  font-size: large;
+  margin: 10px;    
+}
+.example-card-action{
+  display: flex;
+  flex-direction: row;   
+}

@@ -1,5 +1,10 @@
-<p>Ingredients: 
-    @for (tag of ingredients; track $index) {
-        {{ingredients}}
-      }
-</p>
+<section>
+  <h3>Ingredients</h3>
+  <mat-list role="list">
+    @for (ingredient of ingredients; track $index) {
+      <mat-list-item role="listitem">
+        <span matListItemTitle> {{ ingredient }}</span>
+      </mat-list-item>
+    }
+  </mat-list>
+ </section>

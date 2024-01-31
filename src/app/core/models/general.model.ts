@@ -6,6 +6,11 @@ export interface GeneralConfigModel {
         margin: string;
     },
     navbarColor: string;
-    button: string
+    button: string,
+    routerLinkActiveColor: string,
+    ariaCurrentWhenActiveColor: string,
+    exampleCardAction: string,
+    exampleCardContent: string,
+    exampleCard: string
 }
 

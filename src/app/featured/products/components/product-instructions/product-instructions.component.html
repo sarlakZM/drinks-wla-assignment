@@ -1,6 +1,10 @@
-<p>Instructions:
-
-@for (tag of instructions; track $index) {
-    {{instructions}}
-  }
-</p>
+<section>
+  <h3>Instructions</h3>
+  <mat-list role="list">
+    @for (instruction of instructions; track $index) {
+      <mat-list-item role="listitem">
+        <span matListItemTitle> {{instruction }}</span>
+      </mat-list-item>
+    }
+  </mat-list>
+ </section>

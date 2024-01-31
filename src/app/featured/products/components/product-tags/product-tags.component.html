@@ -1,11 +1,9 @@
-<p>Tags:
-
- <mat-chip-set
+<section>Tags:
+ <mat-chip-set aria-label="Tags" color="primary"
   class="example-chip"
   >
-  @for (tag of tags; track $index) {
-    <mat-chip class="example-box" cdkDrag>{{tag}}</mat-chip>
+  @for (tag of tags; track tag) {
+    <mat-chip class="example-box">{{tag}}</mat-chip>
   }
 </mat-chip-set>
-   
-</p>
+</section>
