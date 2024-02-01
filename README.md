@@ -1,6 +1,19 @@
 # EliqWlaAssignment
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.1.
+- This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1
+- Typescript 5.3
+- [Ngrx/Signalstore](https://ngrx.io/guide/store) && [Rxjs](https://rxjs.dev/guide/overview)
+- Styling with  [Angular Material](https://material.angular.io) based on SCSS
+- Testing with Jasmin + Karma
+
+## Built With
+
+![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
+[![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)](https://eslint.org/)
+![RxJS](https://img.shields.io/badge/rxjs-%23B7178C.svg?style=for-the-badge&logo=reactivex&logoColor=white)
+![Jasmine](https://img.shields.io/badge/-Jasmine-%238A4182?style=for-the-badge&logo=Jasmine&logoColor=white)
+
 
 API Specification:
 - api url =>  https://www.thecocktaildb.com/api.php

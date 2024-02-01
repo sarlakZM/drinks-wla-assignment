@@ -1,6 +1,20 @@
 {
   "name": "eliq-wla-assignment",
   "version": "0.0.0",
+  "author": "Zahra Sarlak <sarlak.zh@gmail.com>(https://github.com/sarlakZM)",
+  "keywords": [
+    "Angular 17",
+    "Angular",
+    "Drink",
+    "assignment",
+    "rxjs",
+    "ngrx",
+    "signalstore",
+    "Angular latest + rxjs + ngrx",
+    "pwa",
+    "service worker",
+    "angular material"
+  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
